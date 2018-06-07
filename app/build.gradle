@@ -73,7 +73,7 @@ static String[] getGithubInfo(final String gitInput, final String lookFor) {
     if (index == -1) {
         info = null;
     } else {
-        final int endName = gitInput.indexOf('/', index)
+        final int endName = gitInput.lastIndexOf('/')
 
         if (endName == -1) {
             info = null;
